@@ -2,8 +2,8 @@
 // Created by sach_ar on 8/2/17.
 //
 
-#ifndef VISUAL_TACTILE_OBJECT_REGISTRATION_GOSTYLECHANNEL_H
-#define VISUAL_TACTILE_OBJECT_REGISTRATION_GOSTYLECHANNEL_H
+#ifndef GOSTYLECHANNEL_H
+#define GOSTYLECHANNEL_H
 
 #include <list>
 #include <mutex>
@@ -94,4 +94,4 @@ private:
     bool closed;
 };
 
-#endif //VISUAL_TACTILE_OBJECT_REGISTRATION_GOSTYLECHANNEL_H
+#endif //GOSTYLECHANNEL_H

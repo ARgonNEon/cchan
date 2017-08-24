@@ -2,8 +2,8 @@
 // Created by sach_ar on 8/3/17.
 //
 
-#ifndef VISUAL_TACTILE_OBJECT_REGISTRATION_SEMAPHORE_H_H
-#define VISUAL_TACTILE_OBJECT_REGISTRATION_SEMAPHORE_H_H
+#ifndef SEMAPHORE_H_H
+#define SEMAPHORE_H_H
 
 /**
  * Dijktra's semaphore
@@ -32,4 +32,4 @@ private:
     long n;
 };
 
-#endif //VISUAL_TACTILE_OBJECT_REGISTRATION_SEMAPHORE_H_H
+#endif //SEMAPHORE_H_H
