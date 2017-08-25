@@ -11,8 +11,15 @@ FIND_PACKAGE(Boost REQUIRED COMPONENTS thread system)
 
 INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/..)
 
-ADD_EXECUTABLE(${PROJECT_NAME} go_style_channel_example.cc)
+ADD_EXECUTABLE(cchan_example go_style_channel_example.cc)
 
-TARGET_LINK_LIBRARIES(${PROJECT_NAME}
+TARGET_LINK_LIBRARIES(cchan_example
+    ${Boost_LIBRARIES}
+    stdc++)
+
+ADD_EXECUTABLE(cchan_example_lambda go_style_channel_lambda_example.cc)
+
+
+TARGET_LINK_LIBRARIES(cchan_example_lambda
     ${Boost_LIBRARIES}
     stdc++)
