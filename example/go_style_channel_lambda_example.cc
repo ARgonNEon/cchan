@@ -7,7 +7,7 @@ using namespace std;
 int main(int argc, char **argv) {
     chan<int> c(5);
 
-    boost::thread send([&]() {
+    boost::thread send([&]{
         for (int i = 0; i<100; ++i) {
             c << i; // send to channel
             cout << "send: " << i << endl;
@@ -15,7 +15,7 @@ int main(int argc, char **argv) {
         c.close();
     });
 
-    boost::thread receive([&]() {
+    boost::thread receive([&]{
         int j = 0;
         while(j << c) { //receive from channel
             cout << "recv: " << j << endl;
